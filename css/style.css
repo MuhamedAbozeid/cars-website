@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 
@@ -16,11 +17,14 @@
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     outline: none;
     border: none;
     text-decoration: none;
     text-transform: capitalize;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
     transition: all .2s linear;
 
 }
@@ -57,7 +61,8 @@ section{
     width: 100%;
     z-index: -1;
     background: var(--yellow);
-    clip-path: polygon(0 90%, 100% 80%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 90%, 100% 80%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 90%, 100% 80%, 100% 100%, 0% 100%);
 }
 
 .btn{
@@ -86,9 +91,15 @@ section{
     right: 0;
     z-index: 999;
     background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 3rem 9%;
 
 }
@@ -140,7 +151,8 @@ section{
 }
 
 .header.active{
-    box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
+            box-shadow: var(--box-shadow);
     padding: 2rem 9%;
 }
 
@@ -155,9 +167,15 @@ section{
     height: 100%;
     width: 100%;
     background: rgba(255, 255, 255, .9);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     z-index: 9999;
     opacity: 0;
 }
@@ -171,7 +189,8 @@ section{
     padding: 2rem;
     margin: 2rem;
     border-radius: .5rem;
-    box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
+            box-shadow: var(--box-shadow);
     background: #fff;
     border:var(--border);
     text-align: center;
@@ -179,8 +198,12 @@ section{
 }
 
 .login-form-container form .buttons{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 1rem;
 } 
 
@@ -258,6 +281,7 @@ section{
 .icons-container {
     padding-top: 5rem;
     padding-bottom: 5rem;
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 1.5rem;
@@ -265,12 +289,17 @@ section{
 }
 
 .icons-container .icons{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap:1.5rem;
     padding: 2rem;
     background: #fff;
-    box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
+            box-shadow: var(--box-shadow);
     border-radius: .5rem;
 }
 
@@ -333,23 +362,33 @@ section{
 .vehicles .vehicles-slider .box img{
     width: 100%;
     opacity: .5;
-    transform: scale(.8);
+    -webkit-transform: scale(.8);
+        -ms-transform: scale(.8);
+            transform: scale(.8);
 }
 
 .vehicles .vehicles-slider .box .content{
-    transform: scale(0);
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
     padding-top: 1rem;
 }
 
 .vehicles .vehicles-slider .swiper-slide-active img{
 
     opacity: 1;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
 }
 
 .vehicles .vehicles-slider .swiper-slide-active .content{
 
-    transform: scale(1);
+    -webkit-transform: scale(1);
+
+        -ms-transform: scale(1);
+
+            transform: scale(1);
 }
 
 
@@ -407,6 +446,7 @@ section{
 /* services section  */
 
 .services .box-container{
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap:1.5rem;
@@ -416,7 +456,8 @@ section{
     text-align: center;
     padding: 2rem;
     border-radius: .5rem;
-    box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
+            box-shadow: var(--box-shadow);
     border:var(--border);
 
 }
@@ -469,7 +510,8 @@ section{
 .featured .featured-slider .box{
     text-align: center;
     padding: 2rem;
-    box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
+            box-shadow: var(--box-shadow);
     border:var(--border);
     border-radius: .5rem;
 }
@@ -483,7 +525,9 @@ section{
 }
 
 .featured .featured-slider .box:hover img{
-    transform: scale(.9);
+    -webkit-transform: scale(.9);
+        -ms-transform: scale(.9);
+            transform: scale(.9);
 }
 
 .featured .featured-slider .box h3{
@@ -529,8 +573,11 @@ section{
     margin: 1rem auto;
     max-width: 60rem;
     height: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
+            box-shadow: var(--box-shadow);
     overflow:hidden;
     border-radius: 5rem;
 }
@@ -570,14 +617,19 @@ section{
     margin: 2rem 0;
     text-align: center;
     opacity: .4;
-    transform: scale(.9);
+    -webkit-transform: scale(.9);
+        -ms-transform: scale(.9);
+            transform: scale(.9);
 }
 
 .reviews .reviews-slider .swiper-slide-active{
  
     opacity: 1;
-    transform: scale(1);
-    box-shadow: var(--box-shadow);
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: var(--box-shadow);
+            box-shadow: var(--box-shadow);
     border: var(--border);
 }
 
@@ -611,27 +663,36 @@ section{
 /* contact section  */
 
 .contact .row{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap:1.5rem;
 
 }
 
 .contact .row .map{
-    flex: 1 1 42rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 42rem;
+            flex: 1 1 42rem;
     width: 100%;
     padding: 2rem;
     border: var(--border);
     border-radius: .5rem;
-    box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
+            box-shadow: var(--box-shadow);
 }
 
 .contact .row form{
-    flex: 1 1 42rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 42rem;
+            flex: 1 1 42rem;
     padding: 2rem;
     border: var(--border);
     border-radius: .5rem;
-    box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
+            box-shadow: var(--box-shadow);
     text-align: center;
 }
 
@@ -665,6 +726,7 @@ section{
 }
 
 .footer .box-container{
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap:1.5rem;
@@ -718,6 +780,7 @@ section{
 @media (min-width:1400px){
 
     .services .box-container{
+        display: -ms-grid;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
         gap:1.7rem;
@@ -749,7 +812,9 @@ section{
         
     }
     #menu-btn.fa-times{
-        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+                transform: rotate(180deg);
         
     }
 
@@ -768,10 +833,12 @@ section{
         right: 0;
         background: #fff;
         border-top: var(--border);
-        clip-path: polygon(0 0, 100% 0, 100% 0 , 0 0);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 0 , 0 0);
+                clip-path: polygon(0 0, 100% 0, 100% 0 , 0 0);
     }
     .header .navbar.active{
-        clip-path: polygon(0 0, 100% 0, 100% 100% , 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100% , 0 100%);
+                clip-path: polygon(0 0, 100% 0, 100% 100% , 0 100%);
     }
 
     .header .navbar a{
